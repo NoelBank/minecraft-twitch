@@ -2,7 +2,7 @@ package dev.nbank.minecrafttwitch;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class MinecraftTwitch extends JavaPlugin {
+class MinecraftTwitch extends JavaPlugin {
 
     @Override
     public void onEnable() {
