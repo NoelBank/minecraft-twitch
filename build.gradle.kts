@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "dev.nbank"
-version = "0.0.6"
+version = "0.0.7"
 
 repositories {
     jcenter()
@@ -33,15 +33,17 @@ tasks {
 
     processResources {
         filteringCharset = "UTF-8"
-        filter<org.apache.tools.ant.filters.ReplaceTokens>(
+        filesMatching("**plugin.yml") {
+            filter<org.apache.tools.ant.filters.ReplaceTokens>(
                 "tokens" to mapOf(
-                        Pair("name", project.name),
-                        Pair("description", "Minecraft Twitch Plugin."),
-                        Pair("url", "https://nbank.dev.com"),
-                        Pair("package", "${project.group}.${project.name.toLowerCase()}"),
-                        Pair("version", project.version)
+                    "name" to project.name,
+                    "version" to project.version,
+                    "description" to "A Twitch Minecraft Connection Plugin.",
+                    "package" to "${project.group}.${project.name.toLowerCase()}",
+                    "website" to "https://nbank.dev"
                 )
-        )
+            )
+        }
     }
 
     shadowJar {

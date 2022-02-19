@@ -1,7 +1,7 @@
-name: MinecraftTwitch
-version: '${version}'
-main: dev.nbank.minecrafttwitch.MinecraftTwitch
+name: @name@
+version: @version@
+main: @package@.@name@
+description: "@description@"
+website: @website@
 api-version: 1.18
 author: Noel Bank <info@nbank.dev>
-description: A Twitch Minecraft Connection Plugin
-website: https://nbank.dev
