@@ -3,27 +3,21 @@ plugins {
     id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 
-group = 'dev.nbank'
-version = '0.0.1'
+group = "dev.nbank"
+version = "0.0.1"'"
 
 repositories {
     jcenter()
     mavenCentral()
 
-    maven {
-        name = 'spigotmc-repo'
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
-    }
-    maven {
-        name = 'sonatype'
-        url = 'https://oss.sonatype.org/content/groups/public/'
-    }
+    maven(uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots"))
+    maven(uri("https://oss.sonatype.org/content/groups/public/"))
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
-    compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
+    compileOnly("org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT")
 }
 
 tasks {
