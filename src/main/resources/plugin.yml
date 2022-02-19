@@ -1,6 +1,6 @@
 name: @name@
 version: @version@
-main: @package@.@name@
+main: dev.nbank.minecrafttwitch.MinecraftTwitch
 description: "@description@"
 website: @website@
 api-version: 1.18

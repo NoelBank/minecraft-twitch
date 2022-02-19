@@ -39,7 +39,6 @@ tasks {
                     "name" to project.name,
                     "version" to project.version,
                     "description" to "A Twitch Minecraft Connection Plugin.",
-                    "package" to "${project.group}.${project.name.toLowerCase()}",
                     "website" to "https://nbank.dev"
                 )
             )
