@@ -1,0 +1,7 @@
+name: Minecraft Twitch
+version: '${version}'
+main: dev.nbank.minecrafttwitch.MinecraftTwitch
+api-version: 1.18
+authors: [ nbank ]
+description: A Twitch Minecraft Connection Plugin
+website: https://nbank.dev
