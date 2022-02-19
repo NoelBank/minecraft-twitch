@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "dev.nbank"
-version = "0.0.1"
+version = "0.0.6"
 
 repositories {
     jcenter()
